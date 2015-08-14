@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div id="success" class="alert alert-success hidden" role="alert">Deine Änderungen wurden gespeichert. Herzlichen Dank!</div>
+<div id="error" class="alert alert-danger hidden" role="alert">Das hat leider nicht geklappt. Bitte versuche es nochmal!</div>
+
+<div id="login" class="hidden">
+  <p>Bitte logge Dich mit Deinem Open-Atrium-Account ein. Danach kannst Du Deinen Mitgliedsbeitrag ändern. Dein Benutzername ist <em>Vorname Nachname</em> (mit Leerzeichen).</p>
+
+  <form id="loginForm">
+    <div class="form-group">
+      <label for="username">Benutzername</label>
+      <input id="username" class="form-control" name="username" placeholder="Vorname Nachname" type="text">
+    </div>
+    <div class="form-group">
+      <label for="password">Passwort</label>
+      <input id="password" class="form-control" name="password" placeholder="Passwort" type="password">
+    </div>
+    <button id="loginButton" class="btn btn-default" type="submit">Einloggen</button>
+  </form>
+
+  <h5>Passwort vergessen?</h5>
+  <p>Du kannst jederzeit <a href="https://studieren-ohne-grenzen.org/atrium/user/password" target="_blank">ein neues Passwort beantragen</a> oder Deinen Mitgliedsbeitrag einfach per E-Mail erhöhen. Schreibe dazu an <a href="mailto:mitglieder@studieren-ohne-grenzen.org" target="_blank">mitglieder@studieren-ohne-grenzen.org</a>.</p>
+</div>
+
+<div id="change" class="hidden">
+  <p>Hallo <strong id="currentUsername">???</strong>, Dein gespeicherter monatlicher Mitgliedsbeitrag ist <strong id="currentAmount">??? €</strong>. Du zahlst Deinen Mitgliedsbeitrag <strong id="currentInterval">???</strong>.</p>
+
+  <form id="changeForm">
+    <div class="form-group">
+      <label for="amount">Monatlicher Mitgliedsbeitrag</label>
+      <div class="input-group">
+        <input id="amount" class="form-control" min="1" name="amount" type="number" value="5">
+        <div class="input-group-addon">€</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="interval">Zahlungsrhythmus</label>
+      <select id="interval" class="form-control" name="interval">
+        <option>monatlich</option>
+        <option>vierteljährlich</option>
+        <option selected>jährlich</option>
+      </select>
+    </div>
+    <button id="changeButton" class="btn btn-default" type="submit">Speichern</button>
+  </form>
+</div>

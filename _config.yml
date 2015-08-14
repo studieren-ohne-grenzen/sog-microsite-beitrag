@@ -1,0 +1,7 @@
+# Site settings
+title: Mitgliedsbeitrag ändern
+url: "https://www.studieren-ohne-grenzen.org"
+baseurl: "/beitrag"
+
+exclude: [ upload-to-server.sh,
+           update-template.sh ]

@@ -1,0 +1,8 @@
+css/template.css
+img/logo.jpg
+_includes/footer.html
+_includes/head.html
+_includes/header.html
+_layouts/default.html
+_site/
+*.sh
